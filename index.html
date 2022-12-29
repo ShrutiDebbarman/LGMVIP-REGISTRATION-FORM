@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>STUDENT REGISTRATION FORM</h1>
+        <div class="container">
+            <div class="form">
+                <h2>FORM</h2>
+                <form>
+                    <div class="name">
+                        <label for="name">NAME :</label>
+                        <input type="text" id="name" placeholder="ex.abc" required>
+                    </div>
+                    <div class="email">
+                        <label for="email">EMAIL :</label>
+                        <input type="email" id="email" placeholder="ex. abc@gmail.com" required>
+                    </div>
+                    <div class="website">
+                        <label for="website">WEBSITE :</label>
+                        <input type="url" id="website" placeholder="ex. abc.com" required>
+                    </div>
+                    <div class="image">
+                        <label for="url">IMAGE URL: <span>(jpg,png etc.format)</span></label>
+                        <input type="url" id="url" placeholder="ex. https://abc.jpg"
+                            value="https://st.depositphotos.com/2101611/3923/v/450/depositphotos_39238767-stock-illustration-businessman-avatar-profile-picture.jpg"
+                            required>
+                    </div>
+                    <div class="gender">
+                        <label for="gender">GENDER: </label>
+                        <input type="radio" name="male-female" id="male" value="Male" checked required>Male
+                        <input type="radio" name="male-female" id="female" value="Female">Female
+                    </div>
+                    <div class="skills">
+                        <label for="skills">SKILLS :</label>
+                        <input type="checkbox" value="JAVA" id="cpp" class="checkbox" checked>JAVA
+                        <input type="checkbox" value="C" id="c" class="checkbox">C
+                        <input type="checkbox" value="HTML" id="html" class="checkbox">HTML
+                        <input type="checkbox" value="CSS" id="css" class="checkbox">CSS
+                        <input type="checkbox" value="JAVASCRIPT" id="css" class="checkbox">JAVASCRIPT
+                    </div>
+                    <div class="button">
+                        <button type="button" id="submit">SUBMIT</button>
+                        <button type="reset" id="reset">RESET</button>
+                    </div>
+                </form>
+            </div>
+            <div class="output">
+                <h2>STUDENT DETAILS</h2>
+                <div class="cardContainer" id="cardContainer">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
